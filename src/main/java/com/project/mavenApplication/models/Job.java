@@ -1,4 +1,4 @@
-package com.project.model;
+package com.project.mavenApplication.models;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -7,19 +7,17 @@ import lombok.Data;
 
 @Entity
 @Data
-public class Employee {
+public class Job {
 
     @Id
     @GeneratedValue
     private Long id;
 
-    private String username;
+    private String jobName;
 
-    private String password;
+    private String salary;
 
     private String city;
 
-    private String firstName;
-
-    private String lastName;
+    private String description;
 }
