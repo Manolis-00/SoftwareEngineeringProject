@@ -25,6 +25,9 @@ public class Employee {
     @JoinColumn(name = "employer_id")
     private Employer employer;
 
+    @ManyToOne
+    private Job job;
+
     @Override
     public String toString() {
         return "Employee{" +

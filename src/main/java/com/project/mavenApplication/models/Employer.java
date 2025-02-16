@@ -25,6 +25,9 @@ public class Employer {
     @OneToMany(mappedBy = "employer", cascade = CascadeType.ALL, orphanRemoval = true)
     private Set<Employee> employees = new HashSet<>();
 
+    @ManyToMany(mappedBy = "employers")
+    private Set<Job> jobs = new HashSet<>();
+
     @Override
     public String toString() {
         return "Employer{" +
